@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0801B4631BCCD39773BCC6EA /* Pods_City_Airport_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272249C2458262F09626B12F /* Pods_City_Airport_Search.framework */; };
 		B5FC584E243A4CB400A79598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC584D243A4CB400A79598 /* AppDelegate.swift */; };
 		B5FC5850243A4CB400A79598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC584F243A4CB400A79598 /* SceneDelegate.swift */; };
-		B5FC5852243A4CB400A79598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC5851243A4CB400A79598 /* ViewController.swift */; };
+		B5FC5852243A4CB400A79598 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC5851243A4CB400A79598 /* SearchCityViewController.swift */; };
 		B5FC5855243A4CB400A79598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC5853243A4CB400A79598 /* Main.storyboard */; };
 		B5FC5857243A4CB800A79598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FC5856243A4CB800A79598 /* Assets.xcassets */; };
 		B5FC585A243A4CB800A79598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC5858243A4CB800A79598 /* LaunchScreen.storyboard */; };
+		B5FC5863243A64E100A79598 /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC5862243A64E100A79598 /* SearchCityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272249C2458262F09626B12F /* Pods_City_Airport_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_City_Airport_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FC584A243A4CB400A79598 /* City Airport Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Airport Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FC584D243A4CB400A79598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5FC584F243A4CB400A79598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5FC5851243A4CB400A79598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5FC5851243A4CB400A79598 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
 		B5FC5854243A4CB400A79598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5FC5856243A4CB800A79598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FC5859243A4CB800A79598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5FC585B243A4CB800A79598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FC5862243A64E100A79598 /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
+		C62EC4D3DC4C0AA0B0B07B96 /* Pods-City Airport Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Airport Search.release.xcconfig"; path = "Target Support Files/Pods-City Airport Search/Pods-City Airport Search.release.xcconfig"; sourceTree = "<group>"; };
+		FE36FB34F747CA4F3D7EDBCC /* Pods-City Airport Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Airport Search.debug.xcconfig"; path = "Target Support Files/Pods-City Airport Search/Pods-City Airport Search.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0801B4631BCCD39773BCC6EA /* Pods_City_Airport_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64378492FCC14F769715933D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE36FB34F747CA4F3D7EDBCC /* Pods-City Airport Search.debug.xcconfig */,
+				C62EC4D3DC4C0AA0B0B07B96 /* Pods-City Airport Search.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C4E416A1D6E57C56D5BE4E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				272249C2458262F09626B12F /* Pods_City_Airport_Search.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5FC5841243A4CB400A79598 = {
 			isa = PBXGroup;
 			children = (
 				B5FC584C243A4CB400A79598 /* City Airport Search */,
 				B5FC584B243A4CB400A79598 /* Products */,
+				64378492FCC14F769715933D /* Pods */,
+				8C4E416A1D6E57C56D5BE4E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,24 @@
 		B5FC584C243A4CB400A79598 /* City Airport Search */ = {
 			isa = PBXGroup;
 			children = (
+				B5FC5861243A64CA00A79598 /* ViewModel */,
 				B5FC584D243A4CB400A79598 /* AppDelegate.swift */,
 				B5FC584F243A4CB400A79598 /* SceneDelegate.swift */,
-				B5FC5851243A4CB400A79598 /* ViewController.swift */,
+				B5FC5851243A4CB400A79598 /* SearchCityViewController.swift */,
 				B5FC5853243A4CB400A79598 /* Main.storyboard */,
 				B5FC5856243A4CB800A79598 /* Assets.xcassets */,
 				B5FC5858243A4CB800A79598 /* LaunchScreen.storyboard */,
 				B5FC585B243A4CB800A79598 /* Info.plist */,
 			);
 			path = "City Airport Search";
+			sourceTree = "<group>";
+		};
+		B5FC5861243A64CA00A79598 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC5862243A64E100A79598 /* SearchCityViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FC585E243A4CB800A79598 /* Build configuration list for PBXNativeTarget "City Airport Search" */;
 			buildPhases = (
+				DA2F7D881681F251F2276110 /* [CP] Check Pods Manifest.lock */,
 				B5FC5846243A4CB400A79598 /* Sources */,
 				B5FC5847243A4CB400A79598 /* Frameworks */,
 				B5FC5848243A4CB400A79598 /* Resources */,
+				A01844F53BEED047C9C396CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +170,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A01844F53BEED047C9C396CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-City Airport Search/Pods-City Airport Search-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-City Airport Search/Pods-City Airport Search-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-City Airport Search/Pods-City Airport Search-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2F7D881681F251F2276110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-City Airport Search-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5FC5846243A4CB400A79598 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FC5852243A4CB400A79598 /* ViewController.swift in Sources */,
+				B5FC5852243A4CB400A79598 /* SearchCityViewController.swift in Sources */,
 				B5FC584E243A4CB400A79598 /* AppDelegate.swift in Sources */,
 				B5FC5850243A4CB400A79598 /* SceneDelegate.swift in Sources */,
+				B5FC5863243A64E100A79598 /* SearchCityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +362,13 @@
 		};
 		B5FC585F243A4CB800A79598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE36FB34F747CA4F3D7EDBCC /* Pods-City Airport Search.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = "City Airport Search/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +382,13 @@
 		};
 		B5FC5860243A4CB800A79598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62EC4D3DC4C0AA0B0B07B96 /* Pods-City Airport Search.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = "City Airport Search/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
